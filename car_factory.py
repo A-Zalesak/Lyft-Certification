@@ -8,10 +8,12 @@ from car import Car
 
 # All the methods are static, so I don't see the point of having them inside a class.
 # Is this really how the Factory method works, or did I implement it wrong?
+# Solution: use @static decorator
 class CarFactory:
     def __init__(self):
         pass
 
+    @staticmethod
     def create_calliope(self, current_date, last_service_date, current_mileage, last_service_mileage):
         engine = CapuletEngine(current_mileage, last_service_mileage)
         battery = SpindlerBattery(current_date, last_service_date)
@@ -36,3 +38,4 @@ class CarFactory:
         engine = CapuletEngine(current_mileage, last_service_mileage)
         battery = NubbinBattery(current_date, last_service_date)
         return Car(engine, battery)
+
