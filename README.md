@@ -1,2 +1,1 @@
-# Starter Repo
-This repo has everything you need to get started on the program, good luck!
+This the project that I worked on for the Lyft Back-End Engineering Virtual Experience Program. I now have the certification for this program. The program covered topics such as software infrastructure, refactoring, unit testing, and test-driven development.
